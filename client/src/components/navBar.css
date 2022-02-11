@@ -3,4 +3,30 @@
     justify-content: space-between;
     padding: 1em;
     align-items: center;
+    
+}
+.navbar-title{
+    font-family: "Noto Serif Display", serif;
+  font-family: "Rowdies", cursive;
+  color: rgb(167, 140, 104);
+  font-size: 55px;
+  font-weight: 800;
+  text-shadow: 5px 5px #3507a1;
+}
+
+.navbar-logo{
+    position: relative;
+    top:15px;
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-p{
+    
+    
+    text-transform: capitalize;
+    font-family: "Noto Serif Display", serif;
+  font-family: "Rowdies", cursive;
+  color: rgb(0, 0, 0);
+  text-shadow: 0.9px 0.9px #ffffff;
 }

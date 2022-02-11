@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import "./landingPage.css";
 import Spiner from "./spinner";
 import Varios from "../assets/variosDogs.png"
+import Muchos from "../assets/muchosDos.png"
 
 
 export default function LandingPage() {
@@ -11,7 +12,7 @@ export default function LandingPage() {
     <Fragment>
       <div className="container-landing">
         <div>
-          <h1 className="title">Welcome to paw-radise</h1>
+          <h1 className="title">Welcome to Pawradise</h1>
           <div className="landing-enter">
             <Link to="/home">
               <button className="btn-landing">Enter</button>
@@ -19,6 +20,9 @@ export default function LandingPage() {
           </div>
           <div>
             <img className="varios-landing" src={Varios} alt="" />
+          </div>
+          <div>
+          <img className="muchos-landing" src={Muchos} alt="" />
           </div>
         </div>
       </div>

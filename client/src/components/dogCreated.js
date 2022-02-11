@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { getTemperaments, createDog } from "../actions";
+import "./dogCreated.css"
+import Tag from "../assets/dog-tag-green.png"
+import Return from "../assets/returnHome.png"
 
 function handleValidate(input) {
   let error = {};
@@ -74,7 +77,7 @@ export default function DogCreate() {
       input.height_max,
       input.weight_min,
       input.weight_max,
-      input.temperament.length >= 1
+      input.temperament.length >= 1 
     ) {
       dispatch(createDog(input));
       alert("¡Dog created!");
@@ -100,11 +103,20 @@ export default function DogCreate() {
   }
 
   return (
-    <div>
-      <h1>Create your best Friend</h1>
+    <div className="div-container">
+
+    <div className="home-container">
+
+    <Link to="/home">
+          <img src={Return} alt="not img" className="return-button" />
+        </Link>
+    </div>
+    <div className="container-created">
+
+      <h1 className="title-created">Create your best Friend</h1>
       <form>
         <div>
-          <label>Name: </label>
+          <label className="label-created">Name: </label>
           <input
             type="text"
             value={input.name}
@@ -115,7 +127,7 @@ export default function DogCreate() {
         </div>
 
         <div>
-          <label>Life Span: </label>
+          <label className="label-created">Life Expectancy: </label>
           <input
             type="text"
             value={input.life_span}
@@ -126,7 +138,7 @@ export default function DogCreate() {
         </div>
 
         <div>
-          <label>Height Min: </label>
+          <label className="label-created">Height Min: </label>
           <input
             type="text"
             value={input.height_min}
@@ -137,7 +149,7 @@ export default function DogCreate() {
         </div>
 
         <div>
-          <label>Height Max: </label>
+          <label className="label-created">Height Max: </label>
           <input
             type="text"
             value={input.height_max}
@@ -148,7 +160,7 @@ export default function DogCreate() {
         </div>
 
         <div>
-          <label>Weight Min: </label>
+          <label className="label-created">Weight Min: </label>
           <input
             type="text"
             value={input.weight_min}
@@ -159,7 +171,7 @@ export default function DogCreate() {
         </div>
 
         <div>
-          <label>Weight Max: </label>
+          <label className="label-created">Weight Max: </label>
           <input
             type="text"
             value={input.weight_max}
@@ -170,7 +182,7 @@ export default function DogCreate() {
         </div>
 
         <div>
-          <label>Image: </label>
+          <label className="label-created">Image: </label>
           <input
             type="text"
             value={input.image}
@@ -180,7 +192,7 @@ export default function DogCreate() {
         </div>
 
         <div>
-          <label>Temperaments: </label>
+          <label className="label-created">Temperaments: </label>
           <select onChange={(evt) => handleSelect(evt)}>
             {allTempe.map((el) => {
               return (
@@ -191,10 +203,10 @@ export default function DogCreate() {
             })}
           </select>
             {input.temperament.length <= 0 ? (
-              <p>Seleccione Minimo 1 temperamento</p>
+              <p>Select at least one temperament</p>
             ) : null}
 
-          {/* <br /> */}
+          <br />
         </div>
       </form>
       {input.temperament.map((el) => (
@@ -205,17 +217,11 @@ export default function DogCreate() {
         </div>
       ))}
 
+    </div>
       <div className="end-container">
-        <Link to="/home">
-          <button className="return-button">Return</button>
-        </Link>
-        <button
-          type="submit"
+        <img type="submit"
           className="create-button"
-          onClick={(evt) => handleSubmit(evt)}
-        >
-          Create
-        </button>
+          onClick={(evt) => handleSubmit(evt)} src={Tag} alt="not img" width="135px" height="105px" />
       </div>
     </div>
   );

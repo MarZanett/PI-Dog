@@ -7,7 +7,7 @@ export default function Card({image,name,temperament,life_span,height_max,weight
   <div className="card-home">
   
     <h1 className="card-title">{name}</h1>
-    <img src={image} alt={Huella} width = "200px" height = "250px"/>
+    <img src={image? image : Huella} alt="not img" width = "200px" height = "250px"/>
     <p>Life Expectancy: {life_span}</p>
     <p>Height: {height_max}cm</p>
     <p>Weight: {weight_max}kg</p>

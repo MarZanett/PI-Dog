@@ -4,8 +4,8 @@
   color: rgb(167, 140, 104);
   font-size: 55px;
   font-weight: 800;
-  /* text-shadow: 5px 5px #558ABB; */
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 5px 5px #3507a1;
+  /* text-shadow: 1px 1px 2px black; */
 }
 
 .landing-enter {
@@ -33,4 +33,11 @@
     position: relative;
     float: right;
     top: -55px;
+}
+
+.muchos-landing{
+  position: relative;
+    float: left;
+    height:350px;
+    width:550px;
 }

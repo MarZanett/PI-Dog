@@ -3,7 +3,7 @@
     text-transform: capitalize;
     color: rgb(250, 248, 248);
     max-width: 250px;
-    background-color:rgba(246, 246, 248, 0.274);
+    background-color:rgba(8, 8, 250, 0.274);;
     margin:5px;
     backdrop-filter: blur(10px);
     border-radius:8%;
