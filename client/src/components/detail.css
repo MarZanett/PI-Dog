@@ -6,7 +6,6 @@
     text-transform: capitalize;
     color: rgb(250, 248, 248);
     max-width: 250px;
-    
     background-color:rgba(8, 8, 250, 0.274);
     margin:5px;
     backdrop-filter: blur(10px);
@@ -25,4 +24,20 @@
 .detail-temp{
     min-height: 90px;
     font-size: 15px;
+}
+
+.detail-return {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  border: solid;
+  border-radius: 100%;
+}
+
+.detail-return:hover {
+  cursor: pointer;
+}
+
+.home-container {
+  display: flex;
 }

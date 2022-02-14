@@ -53,7 +53,12 @@ export default function Home() {
             setOrderCreated={setOrderCreated}
             setOrderTemperament={setOrderTemperament}
           />
-          <Reload />
+          <Reload 
+            setOrderName={setOrderName}
+            setOrderWeight={setOrderWeight}
+            setOrderCreated={setOrderCreated}
+            setOrderTemperament={setOrderTemperament}
+          />
         </div>
 
         <div className="cards-home">
@@ -80,7 +85,7 @@ export default function Home() {
             } else
               return (
                 <div key={el.id}>
-                  <Link to={"/home/" + el.id} className="card-home">
+                  <Link to={"/home/" + el.id} className="link-home">
                     <Card
                       name={el.name}
                       image={el.image}

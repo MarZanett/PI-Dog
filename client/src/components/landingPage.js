@@ -10,8 +10,8 @@ import Muchos from "../assets/muchosDos.png"
 export default function LandingPage() {
   return (
     <Fragment>
-      <div className="container-landing">
-        <div>
+      <div >
+        <div className="container-landing">
           <h1 className="title">Welcome to Pawradise</h1>
           <div className="landing-enter">
             <Link to="/home">

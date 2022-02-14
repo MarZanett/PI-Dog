@@ -93,3 +93,12 @@ export function createdOrExists(payload){
     payload,
   }
 }
+
+export function reloadDetail(){
+  return function (dispatch) {
+    return dispatch({
+      type: 'GET_DETAIL',
+      payload: []
+    })
+  }
+}

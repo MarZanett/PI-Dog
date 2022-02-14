@@ -29,7 +29,6 @@ export default function Filters({
   function handlerOrderByName(evt) {
     evt.preventDefault();
     dispatch(orderByName(evt.target.value));
-    console.log(evt.target.value);
     setCurrentPage(1);
     setOrderName(`Sorted ${evt.target.value}`);
   }

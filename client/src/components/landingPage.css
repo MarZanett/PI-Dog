@@ -1,3 +1,7 @@
+.container-landing{
+  margin:20px;
+}
+
 .title {
   font-family: "Noto Serif Display", serif;
   font-family: "Rowdies", cursive;
@@ -5,7 +9,6 @@
   font-size: 55px;
   font-weight: 800;
   text-shadow: 5px 5px #3507a1;
-  /* text-shadow: 1px 1px 2px black; */
 }
 
 .landing-enter {
@@ -14,7 +17,7 @@
 }
 
 .btn-landing {
-  border-radius: 40%;
+  border-radius: 100px;
   padding: 1em;
   font-size: 20px;
   font-weight: 1000;
@@ -32,12 +35,14 @@
 .varios-landing{
     position: relative;
     float: right;
-    top: -55px;
+    top: -45x;
+    height:350px;
+    
 }
 
 .muchos-landing{
   position: relative;
     float: left;
-    height:350px;
+    height:300px;
     width:550px;
 }

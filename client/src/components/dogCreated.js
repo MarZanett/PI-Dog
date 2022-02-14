@@ -71,12 +71,12 @@ export default function DogCreate() {
   function handleSubmit(evt) {
     evt.preventDefault();
     if (
-      input.name,
-      input.life_span,
-      input.height_min,
-      input.height_max,
-      input.weight_min,
-      input.weight_max,
+      input.name &&
+      input.life_span &&
+      input.height_min &&
+      input.height_max &&
+      input.weight_min &&
+      input.weight_max &&
       input.temperament.length >= 1 
     ) {
       dispatch(createDog(input));

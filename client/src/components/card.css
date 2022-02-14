@@ -2,12 +2,12 @@
     text-decoration: none;
     text-transform: capitalize;
     color: rgb(250, 248, 248);
-    max-width: 250px;
+    max-width: 300px;
     background-color:rgba(8, 8, 250, 0.274);;
     margin:5px;
     backdrop-filter: blur(10px);
-    border-radius:8%;
-    border:solid 1px rgba(255, 255, 255, 0.911)
+    border-radius:50px;
+    border:solid rgba(255, 255, 255, 0.911)
     
 
 }
